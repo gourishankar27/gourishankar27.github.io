@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gourishankar Bansode | Robotics & AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta
+    name="description"
+    content="Portfolio of Gourishankar Bansode, Robotics & Autonomous Systems (AI) graduate student at Arizona State University, showcasing projects in robotics, AI, and software engineering."
+  />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="nav">
+      <div class="nav__brand">
+        <span class="nav__logo">GB</span>
+        <span class="nav__tagline">Robotics &amp; AI</span>
+      </div>
+      <div class="nav__links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">
+          Robotics &amp; Autonomous Systems · Artificial Intelligence
+        </p>
+        <h1 class="hero__title">
+          Hi, I’m <span>Gourishankar</span>.
+        </h1>
+        <p class="hero__subtitle">
+          I build intelligent systems that sense, learn, and act — from autonomous
+          drones and robotic goalkeepers to deep learning models for time series
+          and question answering.
+        </p>
+        <p class="hero__meta">
+          M.S. Robotics &amp; Autonomous Systems (AI), Arizona State University ·
+          Graduating May 2026
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="Gourishankar_Resume.pdf" target="_blank" rel="noopener">
+            Download Résumé
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__orb"></div>
+        <div class="hero__grid"></div>
+        <div class="hero__ring hero__ring--outer"></div>
+        <div class="hero__ring hero__ring--inner"></div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section section--split">
+      <div class="section__header">
+        <h2 class="section__title">About</h2>
+        <p class="section__subtitle">
+          Robotics, AI, and reliable software for systems that matter.
+        </p>
+      </div>
+      <div class="section__body section__body--columns">
+        <div>
+          <p>
+            I’m a Master’s student in <strong>Robotics and Autonomous Systems (Artificial Intelligence)</strong>
+            at <strong>Arizona State University</strong>, graduating in May 2026. I enjoy working at the
+            intersection of <strong>computer vision, deep learning, and control</strong>, turning algorithms
+            into systems that move, react, and adapt.
+          </p>
+          <p>
+            Previously, I worked as a <strong>Software Executive at Tata Advanced Systems Limited</strong>, where I
+            led backend development for mission-critical defense systems including the
+            <strong>Indian Army’s Integrated Electronic Warfare Systems</strong> and health monitoring for
+            <strong>Indian Navy radar and combat systems</strong>.
+          </p>
+        </div>
+        <div>
+          <p>
+            My recent work spans <strong>autonomous drone landing</strong>, an
+            <strong>automated goalkeeper robot</strong>, <strong>Transformer-based financial forecasting</strong>,
+            and a <strong>BERT-based descriptive question answering system</strong>.
+          </p>
+          <p>
+            I’m particularly interested in building intelligent robotic systems that combine
+            perception, prediction, and control — with an emphasis on reliability and real-time performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__header">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__subtitle">
+          A blend of robotics, AI, and production-grade software engineering.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="card skill-card">
+          <h3>Programming</h3>
+          <p>Python, C, C++, Bash, MATLAB, Java</p>
+        </article>
+
+        <article class="card skill-card">
+          <h3>AI &amp; Machine Learning</h3>
+          <p>
+            PyTorch, TensorFlow, Scikit-learn, OpenCV, BERT, GPT, YOLO, GANs, Transformers,
+            Pandas, NumPy, Matplotlib
+          </p>
+        </article>
+
+        <article class="card skill-card">
+          <h3>Robotics &amp; Control</h3>
+          <p>ROS, Simulink, NVIDIA Isaac Sim, PID tuning, inverse kinematic solvers</p>
+        </article>
+
+        <article class="card skill-card">
+          <h3>Backend &amp; Systems</h3>
+          <p>Django, FastAPI, REST APIs, MySQL, MongoDB, Qt, Git, Postman</p>
+        </article>
+
+        <article class="card skill-card">
+          <h3>Cloud &amp; DevOps</h3>
+          <p>AWS, Firebase, Linux/Unix, Docker, Kubernetes</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section__header">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__subtitle">
+          Robotics, autonomous systems, and AI projects I’ve worked on recently.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card project-card">
+          <div class="project-card__meta">
+            <span class="pill">Computer Vision</span>
+            <span class="pill">Control</span>
+            <span class="pill">Drones</span>
+          </div>
+          <h3>Autonomous Drone Landing System</h3>
+          <p class="project-card__stack">
+            MATLAB · Simulink · HSV Segmentation
+          </p>
+          <p>
+            Integrated a ground-based line follower with a Parrot Mambo Minidrone for autonomous landing,
+            achieving 95% detection reliability and landing within 5 cm in 80% of runs at platform speeds
+            up to 0.2 m/s.
+          </p>
+          <ul class="project-card__highlights">
+            <li>PI controller for lateral alignment with &lt; 8 pixel tracking error.</li>
+            <li>Robust visual detection using HSV segmentation under varying conditions.</li>
+          </ul>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-card__meta">
+            <span class="pill">YOLOv8</span>
+            <span class="pill">Realtime</span>
+            <span class="pill">Robotics</span>
+          </div>
+          <h3>Automated Goalkeeper Robot</h3>
+          <p class="project-card__stack">
+            YOLOv8 · OpenCV · NumPy · MQTT · Raspberry Pi 5
+          </p>
+          <p>
+            Built a real-time ping-pong ball tracking and interception system with a custom YOLOv8 model,
+            predicting trajectories and driving servo motors via MQTT.
+          </p>
+          <ul class="project-card__highlights">
+            <li>92% mAP for ball detection with custom YOLOv8 model.</li>
+            <li>~2.7 ms/frame inference enabling real-time control.</li>
+          </ul>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-card__meta">
+            <span class="pill">Transformers</span>
+            <span class="pill">Time Series</span>
+          </div>
+          <h3>S&amp;P 500 Forecasting with Transformers</h3>
+          <p class="project-card__stack">
+            PyTorch · Temporal Fusion Transformer · LSTM · ARIMAX
+          </p>
+          <p>
+            Developed a deep learning pipeline for monthly S&amp;P 500 forecasting by integrating
+            macroeconomic indicators with market data to outperform classical econometric baselines.
+          </p>
+          <ul class="project-card__highlights">
+            <li>Experimented with domain-specific Transformer architectures for time series.</li>
+            <li>Benchmarked against LSTM and ARIMAX models.</li>
+          </ul>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-card__meta">
+            <span class="pill">NLP</span>
+            <span class="pill">Transformers</span>
+          </div>
+          <h3>Descriptive Question Answering System</h3>
+          <p class="project-card__stack">
+            BERT · Transformers · PyTorch
+          </p>
+          <p>
+            Implemented a transfer learning–based descriptive QA system using a fine-tuned BERT model and
+            a sentence ranking mechanism for accurate information retrieval.
+          </p>
+          <ul class="project-card__highlights">
+            <li>Published at IEEE Pune Section International Conference.</li>
+            <li>Designed for descriptive, paragraph-level answers.</li>
+          </ul>
+        </article>
+
+        <article class="card project-card project-card--placeholder">
+          <div class="project-card__meta">
+            <span class="pill">Coming Soon</span>
+          </div>
+          <h3>More Robotics &amp; AI Projects</h3>
+          <p>
+            I’m actively expanding this section with new work in multi-agent systems, simulation-first workflows,
+            and advanced perception. Check back soon for updates.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="section__header">
+        <h2 class="section__title">Experience</h2>
+        <p class="section__subtitle">
+          From mission-critical defense systems to intelligent automotive interfaces.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline__item">
+          <div class="timeline__header">
+            <h3>Software Executive · Tata Advanced Systems Limited</h3>
+            <span class="timeline__location">Mumbai, India</span>
+          </div>
+          <div class="timeline__meta">
+            <span class="timeline__dates">Dec 2021 – June 2024</span>
+          </div>
+          <ul>
+            <li>
+              Led backend development for the Indian Army’s Integrated Electronic Warfare Systems (IEWS),
+              managing a team of 6 engineers.
+            </li>
+            <li>
+              Designed a Health Monitor library for Indian Navy projects (3D-ASR, CMS) to ensure system reliability.
+            </li>
+            <li>
+              Automated Fire Controller Units for Dhanush, ATAGS, and Pinaka, reducing manual intervention by ~75%.
+            </li>
+            <li>
+              Developed the Ballistic Logix library for ballistic range data handling, improving processing efficiency
+              by ~60%.
+            </li>
+          </ul>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__header">
+            <h3>Software Engineering Intern · Softnautics LLP</h3>
+            <span class="timeline__location">Pune, India</span>
+          </div>
+          <div class="timeline__meta">
+            <span class="timeline__dates">Jan 2021 – June 2021</span>
+          </div>
+          <ul>
+            <li>
+              Developed a gesture-controlled automotive infotainment system using OpenCV and TensorFlow with 92%
+              gesture recognition accuracy.
+            </li>
+            <li>
+              Integrated ML algorithms with computer vision for a real-time control interface.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+      <div class="section__header">
+        <h2 class="section__title">Achievements &amp; Publications</h2>
+      </div>
+
+      <div class="achievements">
+        <article class="card achievement-card">
+          <h3>Smart India Hackathon Winner</h3>
+          <p class="achievement-card__meta">March 2019</p>
+          <p>
+            Won the world’s largest hackathon organized by the Ministry of Human Resource Development, India.
+          </p>
+        </article>
+
+        <article class="card achievement-card">
+          <h3>National Innovation Contest Finalist</h3>
+          <p class="achievement-card__meta">August 2020</p>
+          <p>
+            Selected to represent MIT-ADT University at the National Innovation Contest by MHRD Innovation Cell.
+          </p>
+        </article>
+
+        <article class="card achievement-card">
+          <h3>IEEE Publication</h3>
+          <p class="achievement-card__meta">December 2021</p>
+          <p>
+            Published “A Transfer Learning Approach For Descriptive Question Answering System” at the IEEE Pune Section
+            International Conference.
+          </p>
+        </article>
+
+        <article class="card achievement-card">
+          <h3>Certifications</h3>
+          <ul class="achievement-card__list">
+            <li>Qt 6 Core with C++ (Beginner, Intermediate, Advanced)</li>
+            <li>Machine Learning – Stanford University / Coursera</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--center">
+      <div class="section__header">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__subtitle">
+          Interested in collaborating on robotics, AI, or autonomous systems? Let’s talk.
+        </p>
+      </div>
+      <div class="contact">
+        <p>Email: <a href="mailto:gourishankar@asu.edu">gourishankar@asu.edu</a></p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/gourishankarb/" target="_blank" rel="noopener">
+            linkedin.com/in/gourishankarb/
+          </a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/gourishankar27" target="_blank" rel="noopener">
+            github.com/gourishankar27
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2025</span> Gourishankar Mahadeo Bansode · Robotics &amp; AI Portfolio</p>
+  </footer>
+
+  <script>
+    // Optional: keep year up to date without any dependencies
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
